@@ -14,12 +14,14 @@ public class QnaDto implements Serializable{
 	private String answer;		// 답변 글 내용
 	private int auth;			// 운영자, 작성자 구분
 	private int del;			// 삭제x
+	private String memId;
+	private int crewSeq;
 
 	public QnaDto() {
 	}
 
 	public QnaDto(int qnaSeq, int category, String qnaTitle, Date wdate, int readcount, String question, String answer,
-			int auth, int del) {
+			int auth, int del, String memId, int crewSeq) {
 		super();
 		this.qnaSeq = qnaSeq;
 		this.category = category;
@@ -30,6 +32,8 @@ public class QnaDto implements Serializable{
 		this.answer = answer;
 		this.auth = auth;
 		this.del = del;
+		this.memId = memId;
+		this.crewSeq = crewSeq;
 	}
 
 	public int getQnaSeq() {
@@ -52,7 +56,7 @@ public class QnaDto implements Serializable{
 		return qnaTitle;
 	}
 
-	public void setTitle(String qnaTitle) {
+	public void setQnaTitle(String qnaTitle) {
 		this.qnaTitle = qnaTitle;
 	}
 
@@ -103,5 +107,24 @@ public class QnaDto implements Serializable{
 	public void setDel(int del) {
 		this.del = del;
 	}
+
+	public String getMemId() {
+		return memId;
+	}
+
+	public void setMemId(String memId) {
+		this.memId = memId;
+	}
+
+	public int getCrewSeq() {
+		return crewSeq;
+	}
+
+	public void setCrewSeq(int crewSeq) {
+		this.crewSeq = crewSeq;
+	}
+
+	
+	
 
 }

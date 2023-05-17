@@ -166,7 +166,11 @@
 				score
 			FROM DIARY
 			ORDER BY wdate DESC) A
+<<<<<<< Updated upstream
 		WHERE memId =#{memId}
+=======
+		WHERE memId=#{memId}
+>>>>>>> Stashed changes
 	</select>    
 	
 	<!-- 다이어리 총 수 -->

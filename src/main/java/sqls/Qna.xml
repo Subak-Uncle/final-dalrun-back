@@ -9,4 +9,7 @@
         FROM qna
     </select>
     
+    <insert id="insertQna" parameterType="com.dalrun.dto.QnaDto">
+    </insert>
+    
 </mapper>
